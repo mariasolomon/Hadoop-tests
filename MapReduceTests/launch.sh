@@ -1,0 +1,2 @@
+#!/bin/bash
+hadoop jar $HADOOP_HOME/hadoop-streaming/hadoop-streaming-2.7.3.jar -input /poezii/cetelegeni.txt -output /results/out_$(date +"%d%m%Y_%H_%M")  -mapper /home/gorgeous/Documents/Hadoop-tests/MapReduceTests/WordCountMapper.py -reducer /home/gorgeous/Documents/Hadoop-tests/MapReduceTests/WordCountReducer.py
